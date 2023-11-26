@@ -1,6 +1,10 @@
 //add everything here
-group = 'com.example'
-version = '0.0.1'
+plugins {
+    id 'java'
+}
+
+group = 'com.epam.demo'
+version = '1.0'
 
 repositories {
     mavenCentral()
@@ -15,3 +19,5 @@ test {
 }
 
 compileJava {}.dependsOn(':utils:publishToMavenLocal')
+
+
